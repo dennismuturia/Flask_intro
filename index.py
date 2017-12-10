@@ -6,7 +6,7 @@ app = Flask(__name__)
 #Let us implement the get and post method and using of templates
 @app.route('/')
 def index():
-    return 'Method used is %s' % request.method
+    return render_template("index.html")
 
 
 
