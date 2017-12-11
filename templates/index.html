@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>This is my flask Intro</title>
       <link rel="stylesheet" href="{{ url_for('static', filename='main.css')}}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+      <link rel="stylesheet" href="{{ url_for('static', filename='') }}">
   </head>
   <body>
     {% if name %}
@@ -12,5 +14,7 @@
     <h1>Name not found</h1>
     {% endif %}
 
+    <script src="{{ url_for('static', filename='jquery.min.js') }}">
+  <script src="{{ url_for('static', filename='boostrap.min.js') }}">
   </body>
 </html>
